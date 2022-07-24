@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Anduamlak_Yitayeh_Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>This is<br />Anduamlak Yitayeh Portfolio</h1>
+						<p>A showcase for my project and abilities </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"> Data Analyst with Python ,Excel & Oracle Database Experience  </a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home></a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="http://www.linkedin.com/in/anduamlak-tadesse-bb8bab215" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">This is Anduamlak Yitayeh</a></h2>
+									<p>I'm so passinated in the field of data analytics</p>
+								</header>
+								<a href="#" class="image main"><img src="images/project1.JPG" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="project1.html" class="button large">Check it Out</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="#">Project 2:Scraping Women sunglass data from https://www.sunglasshut.com</a></h2>
+									</header>
+									<p>The purpose of this project was to scrape sunglass data’s from https://www.sunglasshut.com/, 
+mainly women’s sunglass information is required with the following data columns: sunglass 
+Name, Sunglass Model, Sunglass Price, Sunglass Size and Sunglass Color . A total of 1 to 20 page 
+sizes are scrapped with 18 pages of data, resulting in a 365 x 5 matrix. 
+I’ve first investigated the website by first check the elements with “Inspect” and see how the 
+required data are tagged with which HTML tag element. I’ve selected Beautiful Soup and Requests 
+libraries of python to scrap this website as there is no hidden API Json file available in network 
+monitor tab of internet browsers. All the required information is linked with other page using 
+header reference attributes so that I’ve partitioned my python code with three modules, the first 
+one will parse the href for getting sunglass product information and pass this value to the second 
+function to parse sunglass data. The third module is the main function to call the two defined 
+functions by setting page limit sizes. I could able to retrieve all the required data by using the 
+sleep function to stop the request for 3-14 seconds and then resume it. This helps the server to 
+avoid being overloaded by iteratively modifying the request pattern. To avoid being prevented 
+from accessing the website, I used also Change User Agent with request library to change the 
+default User Agent.
+The project is completed by achieving the desired goal with transformed data values, despite the 
+fact that bypassing the website's security feature is difficult in and of itself. However, using the 
+techniques described above, I have able to bypass the security feature and retrieve the total number 
+of required instances.
+
+
+
+</p>
+									
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Project 3:Scraping Amazon Website to scrap SQL Book Data</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/amazon.jpg" alt="" /></a>
+									<p>The project's goal was to scrape SQL book data from https://www.amazon.com/ using data fields with four properties. Book Name, Published Date, rating out of 5 and Global Ratings are the columns. The data was scraped from 1 to 20 different page sizes, resulting in a 263 x 4 matrix.
+I began my investigation of the website by using "Inspect" to examine the elements and observe how the required data is tagged with which HTML tag element. I chose the Python Modules Beautiful Soup and Requests to scrape this website since they are extremely quick at downloading the data content i needed in a short period of time. I always use a technique for sending requests to the targeted server that involves delaying the request for a certain amount of time and then altering the request pattern by stopping the request for 10-20 seconds and then restarting it using the sleep and randint routines. This allows me to scrape data iteratively with several sites without being blocked by the server.
+The project was completed by achieving the desired goal with cleaned data values, despite the fact that bypassing the website's security feature of Amazon is difficult in and of itself. However, using the techniques described above, I was able to bypass the security feature and retrieve the total number of required data.
+
+</p>
+									
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Project 4:Scraping Ethiojobs Website<br />
+										</a></h2>
+									</header>
+									<p>The purpose of the project was to scrape data from https://www.ethiojobs.net using the data attributes Job Title, Published Date, Job Level, Company Name, Workplace, and Deadline, and provide the results in CSV format. A total of 1 to 9 page sizes are required with 50 pages of data, resulting in a 450 x 6 matrix. Recent job postings with a posting date of less than a week should be included in the data. The resulting CSV file must be cleaned and preprocessed, and any null values must have "Not Stated" flag values.
+I’ve first investigated the website by first check the elements with “Inspect” and see how the required data are tagged with which HTML tag element. I’ve selected Beautiful Soup and Requests libraries of python to scrap this website since the required data is small and there is no hidden API Json file available in network monitor tab of internet browsers. I came into issues retrieving all of the data owing to the server being overloaded with requests, but I was able to work around it by using the sleep and randint functions to stop the request for 5-10 seconds and then resume it. This helps the server to avoid being overloaded by iteratively modifying the request pattern. To avoid being prevented from accessing the website, I used Change User Agent with request library to change the default User Agent. Finally, I cleaned up and preprocessed the data with panda and numpy modules.
+The project was completed by achieving the desired goal with transformed data values, despite the fact that bypassing the website's security feature is difficult in and of itself. However, using the techniques described above, I was able to bypass the security feature and retrieve the total number of required instances.
+</p>
+									
+								</article>
+						
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								
+								<p>WPX9 324 Addis Ababa Street,1000<br />
+								Addis Ababa, Ethiopia </p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+251) 911859866</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">ndy.andupa@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+								
+									<li><a href="http://www.linkedin.com/in/anduamlak-tadesse-bb8bab215" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Anduamlak</li><li>2022</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
