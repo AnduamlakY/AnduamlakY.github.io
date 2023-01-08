@@ -23,21 +23,18 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"> Data Analyst with Python ,Excel & Oracle Database Experience  </a>
+						<a href="index.html" class="logo"> Data Analyst with Python, SQL ,Excel & Database Experiences  </a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home></a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="http://www.linkedin.com/in/anduamlak-tadesse-bb8bab215" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
 
+					<ul class="links">
+							<li class="active"><a href="index.html">Home></a></li>
+					         
+						</ul>
+						<ul class="links">
+					</nav>
 				<!-- Main -->
 					<div id="main">
 
@@ -47,17 +44,47 @@
 									<h2><a href="#">This is Anduamlak Yitayeh</a></h2>
 									<p>I'm so passinated in the field of data analytics</p>
 								</header>
-								<a href="#" class="image main"><img src="images/project 1.JPG" alt="" /></a>
+								<a href="#" class="image main">Sun-glass Data Visualization using Power BI<img src="images/project 1.JPG" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="project1.html" class="button large">Check it Out</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
+							<section class="posts">														
 								<article>
 									<header>
-										<h2><a href="#">Project 2:Scraping Women sunglass data from https://www.sunglasshut.com</a></h2>
+										<h2><a href="#">Project 1:Exploratory data analytics on Sales data</a></h2>
+									</header>
+									<p>The purpose of this project was to perform exploratory Data Analytics(EDA) using a real world sales data to perform the following tasks:
+									     # 1. What is the best month for sales? How much it was earned ?
+                                         # 2. Which city had the highest number of sales?
+                                         # 3. What time should we display advertisment to maximize the liklihood of customer for buying products?
+                                         # 4. what products are most often sold together?
+                                         # 5. Segregate/Classify all the products with expensive product,mid range product and cheapest ones?
+                                         # 6. How much percentage more expensive is "#Macbook Pro Laptop" when compared to all products?
+
+</p>
+<ul class="actions special"><li><a href="https://github.com/AnduamlakY/EDA-data-analytics-using-Sales-data/blob/main/Sales_Data_Fully_Analysis_using_real_world_data.ipynb" class="button large">Check it Out</a></li></ul>
+   <article>
+									<header>
+										<h2><a href="#">Project 2:Exploratory data analytics on Netflix data</a></h2>
+									</header>
+									<p>The purpose of this project was to perform exploratory Data Analytics(EDA) using Netflix data to perform the following tasks:
+									
+									    # Task 1: What is the most popoular release year for movies on Netflix.
+                                        # Task 2 : What year did netflix add the most content to its platform?
+                                        # Task 3: What is the movie with the longest title in the dataset?
+                                        # Task 4: which actr/actress shown up most frequently in Netflix database?
+																		   
+</p>
+<ul class="actions special"><li><a href="https://github.com/AnduamlakY/EDA-on-Netflix-data-analysis" class="button large">Check it Out</a></li></ul>
+   
+								</article>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Project 3:Scraping Women sunglass data from https://www.sunglasshut.com</a></h2>
 									</header>
 									<p>The purpose of this project was to scrape sunglass data’s from https://www.sunglasshut.com/, 
 mainly women’s sunglass information is required with the following data columns: sunglass 
@@ -79,15 +106,10 @@ The project is completed by achieving the desired goal with transformed data val
 fact that bypassing the website's security feature is difficult in and of itself. However, using the 
 techniques described above, I have able to bypass the security feature and retrieve the total number 
 of required instances.
+	</p>								
 
-
-
-</p>
-									
-								</article>
-								<article>
 									<header>
-										<h2><a href="#">Project 3:Scraping Amazon Website to scrap SQL Book Data</a></h2>
+										<h2><a href="#">Project 4:Scraping Amazon Website to scrap SQL Book Data</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/amazon.jpg" alt="" /></a>
 									<p>The project's goal was to scrape SQL book data from https://www.amazon.com/ using data fields with four properties. Book Name, Published Date, rating out of 5 and Global Ratings are the columns. The data was scraped from 1 to 20 different page sizes, resulting in a 263 x 4 matrix.
@@ -95,20 +117,13 @@ I began my investigation of the website by using "Inspect" to examine the elemen
 The project was completed by achieving the desired goal with cleaned data values, despite the fact that bypassing the website's security feature of Amazon is difficult in and of itself. However, using the techniques described above, I was able to bypass the security feature and retrieve the total number of required data.
 
 </p>
-									
+														</article>
+
+
+
 								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 4:Scraping Ethiojobs Website<br />
-										</a></h2>
-									</header>
-									<p>The purpose of the project was to scrape data from https://www.ethiojobs.net using the data attributes Job Title, Published Date, Job Level, Company Name, Workplace, and Deadline, and provide the results in CSV format. A total of 1 to 9 page sizes are required with 50 pages of data, resulting in a 450 x 6 matrix. Recent job postings with a posting date of less than a week should be included in the data. The resulting CSV file must be cleaned and preprocessed, and any null values must have "Not Stated" flag values.
-I’ve first investigated the website by first check the elements with “Inspect” and see how the required data are tagged with which HTML tag element. I’ve selected Beautiful Soup and Requests libraries of python to scrap this website since the required data is small and there is no hidden API Json file available in network monitor tab of internet browsers. I came into issues retrieving all of the data owing to the server being overloaded with requests, but I was able to work around it by using the sleep and randint functions to stop the request for 5-10 seconds and then resume it. This helps the server to avoid being overloaded by iteratively modifying the request pattern. To avoid being prevented from accessing the website, I used Change User Agent with request library to change the default User Agent. Finally, I cleaned up and preprocessed the data with panda and numpy modules.
-The project was completed by achieving the desired goal with transformed data values, despite the fact that bypassing the website's security feature is difficult in and of itself. However, using the techniques described above, I was able to bypass the security feature and retrieve the total number of required instances.
-</p>
-									
-								</article>
-						
+								
+							
 							</section>
 
 						<!-- Footer -->
